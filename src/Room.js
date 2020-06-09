@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import './Room.css'
 
 
 function Room(){
@@ -20,10 +21,12 @@ function updateAc(){
 }
    
 return(
-<div>
-    This Room is {isLit? "Lit": "dark"}
-    <br/> Count={count1} <br/>
+<div className={'room ${isLit? "lit": "dark"}'} >
+    This Room is {isLit? "lit": "dark"}
+    <br/>
     <button onClick={updateLit} >Toggle Light</button>
+    <br/> 
+    Count={count1} 
     <br/>
     <button onClick={updateAc} >Toggle Ac</button>
     <br/>Count={count2}<br/>

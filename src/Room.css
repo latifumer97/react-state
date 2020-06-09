@@ -1,0 +1,14 @@
+.room{
+height:  100%;
+}
+
+.lit{
+    background-color: #fcfcfc;
+    color: black;
+
+}
+
+.dark{
+    background-color: black;
+    color: rgb(60, 255, 0);
+}
